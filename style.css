@@ -1,0 +1,339 @@
+:root {
+    --cWidth: 85%;
+    --textcolor: #7e7a7a;
+
+}
+body { background: dodgerblue;}
+
+.frames {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .frame {
+    position: relative;
+    width: 13rem;
+    box-sizing: border-box;
+    height: 24rem;
+    background: #fff;
+    margin: 4rem auto;
+    overflow-y: auto;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    font-size: 14px;
+    color: var(--textcolor);
+  }
+  /*
+    First calculator interface
+  */
+
+  .calc1 > .display {
+      position: relative;
+      top: 2.5rem;
+      width: var(--cWidth);
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+  }
+
+  .display > input {
+      text-align: right;
+      border: 0px;
+  }
+
+  .display > .answer {
+    font-size: 1.5rem;
+    margin-top: 10px;  
+  }
+
+  .calc1 .calc-keys {
+      position: relative;
+      top: 2rem;
+      width: var(--cWidth);
+      display: grid;
+      grid-row-gap: 20px;
+      grid-template-columns: repeat(4,32px);
+      grid-template-rows: repeat(5, 32px);
+      grid-template-areas: 
+    "a pm p d"
+    "se e n x"
+    "f fi s m"
+    "o t th pl"
+    "z do q q";
+
+      justify-content: space-between;
+      font-size: 17px;
+  }
+
+  .calc1 .dot {
+      grid-area: do;
+  }
+
+  .calc1 .equals {
+      grid-area: q;
+      color: #fff;
+      background: rgba(255, 196, 0, 0.5);
+      border-radius: 10px;
+
+  }
+
+  .calc1 button {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      border: 0px;
+      outline: none;
+      cursor: pointer;
+      color: var(--textcolor);
+  }
+
+  .calc1 .operators {
+      background-color: #f5f5f5;
+  }
+
+  .calc1 .operators:hover {
+    background-color: #c7b6b6;
+    color: #fff;
+    /* width: 40px;
+    height: 40px; */
+  }
+
+  .calc1 .operands {
+      background: #fff;
+  }
+
+  .calc1 .operands:hover {
+      border: 1px solid pink;
+  }
+  
+  .calc1 .plus-or-minus {
+      text-decoration: underline;
+      text-decoration-color: var(--textcolor);
+  }
+
+/*
+  Second calculator Interface
+*/
+
+.calc2 {
+    border-radius: 3px;
+    font-size: 8px;
+    height: 22rem;
+}
+
+.calc2 .color-balls {
+    width: 96%;
+    height: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.color-balls > div {
+    width: 2.3rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.color-balls .red{
+    color: red;
+}
+
+.color-balls .gold{
+    color: gold;
+}
+
+.color-balls .green{
+    color: #05df05;
+}
+
+.calc2 .display {
+    width: 85%;
+    margin-top: 0px;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+
+.calc2 .answer {
+    margin-bottom: 5px;
+    padding-right: 0px;
+    color: #504c4c;
+    font-size: 1.8rem;
+}
+
+.calc2 input {
+    letter-spacing: 1px;
+}
+
+.calc2 .calc-keys {
+    position: relative;
+    top: 1rem;
+    width: var(--cWidth);
+    display: grid;
+    grid-row-gap: 20px;
+    grid-template-columns: repeat(4,32px);
+    grid-template-rows: repeat(5, 32px);
+    grid-template-areas: 
+    "a pm p d"
+    "se e n x"
+    "f fi s m"
+    "o t th pl"
+    ". z c eq";
+
+    justify-content: space-between;
+    font-size: 12px;
+}
+
+.calc2 button {
+    color: #504c4c;
+    border: 0px;
+    background-color: unset;
+    outline: none;
+    cursor: pointer;
+}
+
+.calc2 button:hover {
+    border: 1px solid rgb(0, 255, 0);
+    border-radius: 50%;
+}
+
+.calc2 .equals {
+    grid-area: eq;
+}
+
+.calc2 .comma {
+    grid-area: c;
+}
+
+.calc2 .zero {
+    grid-area: z;
+}
+
+.calc2 .blue {
+    color: #1a8df8;
+}
+
+.calc2 .equals:hover {
+    border: 1px solid gold;
+}
+
+.calc2 .clear:hover {
+    border: 1px solid red;
+}
+
+
+/*
+THIRD CALCULATOR
+
+*/
+
+.calc3 {
+    width: 15rem;
+    height: 18rem;
+}
+
+.calc3 .color-balls {
+    width: 96%;
+    height: 1.4rem;
+    display: flex;
+    align-items: flex-end;
+    font-size: 7px;
+    color: #bdb8b8;
+}
+
+
+.calc3 .color-balls div {
+    padding-left: 1rem;
+    width: 2rem;
+    display: flex;
+}
+
+.calc3 .display {
+   width: 85%;
+   margin-top: 0px;
+   margin-bottom: 0px;
+   display: flex;
+   flex-direction: column;
+   text-align: right; 
+}
+
+.calc3 .answer {
+    color: #272727;
+    font-size: 2rem;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.calc3 .calc-keys {
+    position: relative;
+    top: 1rem;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(5, 39px);
+    grid-template-areas: 
+    "a pm p d"
+    "se e n x"
+    "f fi s m"
+    "o t th pl"
+    "z z c eq";
+
+    font-size: 20px;
+    margin-top: 0px;
+}
+
+.calc3 button {
+    border: 0.1px solid #d5c7db;
+    background-color: #f2e3f8;
+    outline: none;
+    cursor: pointer;
+}
+
+.calc3 .equals {
+    grid-area: eq;
+}
+
+.calc3 .comma {
+    grid-area: c;
+}
+
+.calc3 .zero {
+    grid-area: z;
+    text-align: left;
+    padding-left: 24px;
+}
+
+.calc3 .purple {
+    background: rgba(234, 161, 248, 0.6);
+
+}
+
+.calc3 .divide {
+    background: #f8de48;
+    color: #fff;
+}
+
+.calc3 .times {
+    background: linear-gradient(to top,#f8cf48 , 10%,hsl(49, 94%, 67%));
+    color: #fff;
+}
+
+.calc3 .minus {
+    background: radial-gradient( #ffc456, 80%,#f8cf48);
+    color: #fff;
+}
+
+.calc3 .plus {
+    background: linear-gradient(to top, #f5ac25, 90%,#f8cf48);
+    color: #fff;
+}
+
+.calc3 .equals {
+    background: rgb(252, 147, 28);
+    color: #fff;
+}
+
