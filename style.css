@@ -69,12 +69,12 @@ body { background: dodgerblue;}
       grid-row-gap: 20px;
       grid-template-columns: repeat(4,32px);
       grid-template-rows: repeat(5, 32px);
-      grid-template-areas: 
+      /* grid-template-areas: 
     "a pm p d"
     "se e n x"
     "f fi s m"
     "o t th pl"
-    "z do q q";
+    "z do q q"; */
 
       justify-content: space-between;
       font-size: 17px;
@@ -87,16 +87,18 @@ body { background: dodgerblue;}
     border: 0px;
     outline: none;
     cursor: pointer;
+    background-color: #f5f5f5;
     color: var(--textcolor);
     font-weight: 300;
 }
 
   .calc1 .dot {
-      grid-area: do;
+      /* grid-area: do; */
   }
 
   .calc1 .equals {
-      grid-area: q;
+      /* grid-area: q; */
+      grid-column: 3/5;
       color: #fff;
       background: rgba(255, 196, 0, 0.7);
       border-radius: 10px;
