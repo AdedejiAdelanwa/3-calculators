@@ -4,7 +4,7 @@
 
 }
 
-body { background: dodgerblue;}
+body { background: #dbecec;}
 
 .frames {
     display: flex;
@@ -27,6 +27,10 @@ body { background: dodgerblue;}
     border-radius: 10px;
     font-size: 16px;
     color: var(--textcolor);
+
+    -webkit-box-shadow: 0px 0px 15px -1px #444444;
+    -moz-box-shadow: 0px 0px 15px -1px #444444;
+     box-shadow: 0px 0px 15px -1px #444444;
   }
 
  input:focus {
@@ -100,8 +104,9 @@ body { background: dodgerblue;}
       /* grid-area: q; */
       grid-column: 3/5;
       color: #fff;
-      background: rgba(255, 196, 0, 0.7);
+      background: #ffc400b3;
       border-radius: 10px;
+      -webkit-text-stroke: 2px #ffc400b3;
   }
 
 
@@ -141,7 +146,7 @@ body { background: dodgerblue;}
 */
 
 .calc2 {
-    border-radius: 3px;
+    border-radius: 5px;
     font-family: 'Catamaran', sans-serif;
     font-size: 8px;
     font-weight: 300;
@@ -260,7 +265,7 @@ THIRD CALCULATOR
 
 .calc3 {
     width: 15rem;
-    height: 18rem;
+    height: 19rem;
     font-family: 'Catamaran', sans-serif;
     
 }
@@ -301,9 +306,10 @@ THIRD CALCULATOR
     position: relative;
     top: 1rem;
     width: 100%;
+
     display: grid;
     grid-template-columns: repeat(4,1fr);
-    grid-template-rows: repeat(5, 39px);
+    grid-template-rows: repeat(5, 41.85px);
     grid-template-areas: 
     "a pm p d"
     "se e n x"
