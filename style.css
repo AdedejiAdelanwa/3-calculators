@@ -73,20 +73,18 @@ body { background: #dbecec;}
       grid-row-gap: 20px;
       grid-template-columns: repeat(4,32px);
       grid-template-rows: repeat(5, 32px);
-      /* grid-template-areas: 
-    "a pm p d"
-    "se e n x"
-    "f fi s m"
-    "o t th pl"
-    "z do q q"; */
+      grid-template-areas: 
+                "a pm p d"
+                "se e n x"
+                "f fi s m"
+                "o t th pl"
+                "z do q q";
 
       justify-content: space-between;
       font-size: 17px;
   }
 
   .calc1 button {
-    width: 32px;
-    height: 32px;
     border-radius: 50%;
     border: 0px;
     outline: none;
@@ -97,12 +95,11 @@ body { background: #dbecec;}
 }
 
   .calc1 .dot {
-      /* grid-area: do; */
+      grid-area: do;
   }
 
   .calc1 .equals {
-      /* grid-area: q; */
-      grid-column: 3/5;
+      grid-area: q;
       color: #fff;
       background: #ffc400b3;
       border-radius: 10px;
