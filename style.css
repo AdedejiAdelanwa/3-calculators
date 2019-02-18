@@ -1,6 +1,7 @@
 :root {
     --cWidth: 85%;
     --textcolor: #7e7a7a;
+    font-size: 16px;
 
 }
 
@@ -14,9 +15,9 @@ body { background: #dbecec;}
   
   .frame {
     position: relative;
-    width: 18rem;
+    width: 25rem;
     box-sizing: border-box;
-    height: 24rem;
+    height: 27rem;
     background: #fff;
     margin: 4rem auto;
     overflow-y: auto;
@@ -25,7 +26,6 @@ body { background: #dbecec;}
     flex-direction: column;
     align-items: center;
     border-radius: 10px;
-    font-size: 16px;
     color: var(--textcolor);
 
     -webkit-box-shadow: 0px 0px 15px -1px #444444;
@@ -58,10 +58,11 @@ body { background: #dbecec;}
       text-align: right;
       border: 0px;
       font-weight: 200;
+      font-size: 20px;
   }
 
   .display > .answer {
-    font-size: 1.5rem;
+    font-size: 2rem;
     margin-top: 10px;  
   }
 
@@ -71,8 +72,8 @@ body { background: #dbecec;}
       width: var(--cWidth);
       display: grid;
       grid-row-gap: 20px;
-      grid-template-columns: repeat(4,32px);
-      grid-template-rows: repeat(5, 32px);
+      grid-template-columns: repeat(4,40px);
+      grid-template-rows: repeat(5, 40px);
       grid-template-areas: 
                 "a pm p d"
                 "se e n x"
@@ -81,7 +82,7 @@ body { background: #dbecec;}
                 "z do q q";
 
       justify-content: space-between;
-      font-size: 17px;
+      font-size: 20px;
   }
 
   .calc1 button {
@@ -147,7 +148,6 @@ body { background: #dbecec;}
     font-family: 'Catamaran', sans-serif;
     font-size: 10px;
     font-weight: 300;
-    height: 22rem;
 }
 
 .calc2 .color-balls {
@@ -181,6 +181,7 @@ body { background: #dbecec;}
     display: flex;
     flex-direction: column;
     text-align: right;
+    font-size: 20px;
 }
 
 .calc2 .answer {
@@ -200,8 +201,8 @@ body { background: #dbecec;}
     width: var(--cWidth);
     display: grid;
     grid-row-gap: 20px;
-    grid-template-columns: repeat(4,32px);
-    grid-template-rows: repeat(5, 32px);
+    grid-template-columns: repeat(4,40px);
+    grid-template-rows: repeat(5, 40px);
     grid-template-areas: 
     "a pm p d"
     "se e n x"
@@ -210,7 +211,7 @@ body { background: #dbecec;}
     ". z c eq";
 
     justify-content: space-between;
-    font-size: 17px;
+    font-size: 20px;
 }
 
 .calc2 button {
@@ -261,10 +262,7 @@ THIRD CALCULATOR
 */
 
 .calc3 {
-    width: 15rem;
-    height: 19rem;
     font-family: 'Catamaran', sans-serif;
-    
 }
 
 .calc3 .color-balls {
@@ -272,15 +270,16 @@ THIRD CALCULATOR
     height: 1.4rem;
     display: flex;
     align-items: flex-end;
-    font-size: 7px;
+    font-size: 10px;
     color: #bdb8b8;
 }
 
 
 .calc3 .color-balls div {
-    padding-left: 1rem;
-    width: 2rem;
+    padding-left: 5px;
+    width: 2.5rem;
     display: flex;
+    justify-content: space-between;
 }
 
 .calc3 .display {
@@ -306,7 +305,7 @@ THIRD CALCULATOR
 
     display: grid;
     grid-template-columns: repeat(4,1fr);
-    grid-template-rows: repeat(5, 41.85px);
+    grid-template-rows: repeat(5, 65px);
     grid-template-areas: 
     "a pm p d"
     "se e n x"
@@ -314,8 +313,8 @@ THIRD CALCULATOR
     "o t th pl"
     "z z c eq";
 
-    font-size: 20px;
-    margin-top: 0px;
+    font-size: 24px;
+    margin-top: 8px;
 }
 
 .calc3 button {
